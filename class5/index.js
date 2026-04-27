@@ -118,11 +118,23 @@ function generateList() {
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Delete";
         deleteBtn.classList.add("delete-btn");
-
         // Delete logic
         deleteBtn.addEventListener("click", function () {
-            items.splice(i, 1); // remove item from array
-            generateList();     // re-render list
+            // items.splice(i, 1);
+            const newArr = items.filter((item,index)=>{
+                console.log(items[i] == item);
+                console.log(items[i],item);
+                if(items[i] == item)
+                {
+                    return false;
+                } else {
+                    return true;
+                }
+            });
+
+            items.length = 0;
+            items.push(...newArr);
+            generateList(); 
         });
 
         li.appendChild(deleteBtn);
