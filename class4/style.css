@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CARD */
+.card {
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+/* DIFFERENT COLORS */
+.card1 {
+    background: white;
+    border-top: 5px solid #4facfe;
+}
+
+.card2 {
+    background: white;
+    border-top: 5px solid #28a745;
+}
+
+/* HEADINGS */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* LABEL */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* INPUT FOCUS */
+input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* BUTTON COLORS */
+#toggleButton {
+    background: #6c757d;
+}
+
+#toggleButton:hover {
+    background: #555e66;
+}
+
+button[type="submit"] {
+    background: #4facfe;
+}
+
+button[type="submit"]:hover {
+    background: #007bff;
+}
+
+#checkButton {
+    background: #28a745;
+}
+
+#checkButton:hover {
+    background: #218838;
+}
+
+/* USER LIST */
+#userList {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+#userList li {
+    background: #f1f1f1;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* RESULT */
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card3 {
+    background: white;
+    border-top: 5px solid #ff7f50; /* orange */
+}
+
+/* style dropdown */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+#convertButton {
+    background: #9dc315;
+}
+
+#convertButton:hover {
+    background: #0ebc34;
+}
+
+p{
+    font-size: 15px;
+    color: #ff7f50;
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 30px;
+    color: #ff7f50;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+}
